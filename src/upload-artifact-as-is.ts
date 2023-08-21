@@ -35,8 +35,12 @@ async function run(): Promise<void> {
 
             core.info('Artifact upload has finished successfully!')
         }
-    } catch (err) {
-        core.setFailed(err.message)
+    } catch (err: any) {
+        if ('message' in err && typeof err.message === 'string') {
+            core.setFailed(err.message)
+        } else {
+            core.setFailed(JSON.stringify(err))
+        }
     }
 }
 

@@ -1,5 +1,7 @@
 # upload-artifact-as-is
 
+Forked from https://github.com/kittaakos/upload-artifact-as-is. The credit goes there. 🏅
+
 Inspired by [actions/upload-artifact](https://github.com/actions/upload-artifact). The credit goes there. 🏅
 
 This GitHub Action uploads build artifacts, but unlike the original [actions/upload-artifact](https://github.com/actions/upload-artifact) GitHub Action, this one does not require the desired artifact `name`, but uses the original name of the files for the uploads. No artifact name customization is possible.
@@ -13,24 +15,9 @@ This GitHub Action uploads build artifacts, but unlike the original [actions/upl
 ## Example usage
 
 ```yaml
-    - uses: kittaakos/upload-artifact-as-is@v1
+    - uses: sorenson-eng/upload-artifact-as-is@main
     with:
         path: path/to/artifactDir/ # or path/to/artifactDir or path/to/artifactFile or path/to/**/wildcard/*
-```
-
-In action:
-```yaml
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - run: mkdir -p path/to/artifact
-      - run: echo hello1 > path/to/artifact/world1.txt
-      - run: echo hello2 > path/to/artifact/world2.txt
-
-      - uses: kittaakos/upload-artifact-as-is@v0
-        with:
-          path: path/to/artifact/
 ```
 
 Output:
