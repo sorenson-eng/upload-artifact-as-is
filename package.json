@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/kittaakos/upload-artifact-as-is#readme",
   "devDependencies": {
-    "@actions/artifact": "^0.3.1",
+    "@actions/artifact": "^1.1.1",
     "@actions/core": "^1.2.3",
-    "@actions/glob": "^0.1.0",
+    "@actions/glob": "^0.4.0",
     "@actions/io": "^1.0.2",
-    "@types/node": "^13.11.1",
+    "@types/node": "^20.5.1",
     "@zeit/ncc": "^0.22.1",
-    "glob": "^7.1.6",
-    "typescript": "^3.8.3"
+    "glob": "^10.3.3",
+    "typescript": "^5.1.6"
   }
 }
