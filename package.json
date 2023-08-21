@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kittaakos/upload-artifact-as-is.git"
+    "url": "git+https://github.com/sorenson-eng/upload-artifact-as-is.git"
   },
   "keywords": [
     "Actions",
@@ -17,12 +17,12 @@
     "Artifacts",
     "Upload"
   ],
-  "author": "kittaakos",
+  "author": "sorenson-eng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kittaakos/upload-artifact-as-is/issues"
+    "url": "https://github.com/sorenson-eng/upload-artifact-as-is/issues"
   },
-  "homepage": "https://github.com/kittaakos/upload-artifact-as-is#readme",
+  "homepage": "https://github.com/sorenson-eng/upload-artifact-as-is#readme",
   "devDependencies": {
     "@actions/artifact": "^1.1.1",
     "@actions/core": "^1.2.3",
